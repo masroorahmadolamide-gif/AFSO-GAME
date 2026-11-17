@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#78D9FF">
+
+    <title>AFSO - Play, Learn, Explore!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">🚀</span>
+            <span>AFSO</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#rewards">Rewards</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="coin-button">🪙 <span>0</span></button>
+            <button class="profile-button">👦</button>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="welcome-label">🌈 YOUR FUN WORLD STARTS HERE</span>
+
+                <h1>
+                    Let's Play,<br>
+                    <span>Little Explorer!</span>
+                </h1>
+
+                <p>
+                    Discover amazing games, meet cute friends,
+                    solve puzzles and collect awesome rewards!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#games" class="play-button">
+                        Play Now 🎮
+                    </a>
+
+                    <a href="#games" class="explore-button">
+                        Explore Games
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="sun">☀️</div>
+                <div class="hero-character">🐻</div>
+                <div class="hero-star star-one">⭐</div>
+                <div class="hero-star star-two">✨</div>
+                <div class="hero-cloud cloud-one">☁️</div>
+                <div class="hero-cloud cloud-two">☁️</div>
+            </div>
+
+        </section>
+
+
+        <!-- GAME SECTION -->
+
+        <!-- PLAYER PROFILE -->
+        <section class="profile-section" id="playerProfile">
+
+            <div class="profile-heading">
+                <span>⭐ YOUR ADVENTURE IDENTITY</span>
+                <h2>My Explorer Profile</h2>
+            </div>
+
+            <div class="profile-card">
+
+                <div class="avatar-display" id="avatarDisplay">🐻</div>
+
+                <div class="profile-info">
+                    <h2 id="playerNameDisplay">Little Explorer</h2>
+                    <p>🌟 AFSO Explorer</p>
+                    <div class="profile-stats">
+                        <span>🪙 <b id="profileCoins">0</b> Coins</span>
+                        <span>🎮 <b id="profileGames">0</b> Games</span>
+                        <span>🏆 Level <b id="playerLevel">1</b></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="avatar-picker">
+                <h3>Choose Your Avatar! 🎨</h3>
+
+                <div class="avatar-options">
+                    <button onclick="chooseAvatar('🐻')">🐻</button>
+                    <button onclick="chooseAvatar('🐼')">🐼</button>
+                    <button onclick="chooseAvatar('🐯')">🐯</button>
+                    <button onclick="chooseAvatar('🐰')">🐰</button>
+                    <button onclick="chooseAvatar('🦊')">🦊</button>
+                    <button onclick="chooseAvatar('🐸')">🐸</button>
+                </div>
+
+                <div class="name-editor">
+                    <input type="text" id="playerNameInput" maxlength="20" placeholder="Enter your explorer name">
+
+                    <button onclick="savePlayerName()">Save Name</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AFSO ADVENTURE WORLD -->
+        <section class="world-section">
+
+            <div class="world-heading">
+                <span>🌍 EXPLORE THE MAGIC</span>
+                <h2>Welcome to Adventure World!</h2>
+                <p>Choose a world and discover something amazing.</p>
+            </div>
+
+            <div class="world-grid">
+
+                <div class="world-card forest">
+                    <div class="world-emoji">🌳</div>
+                    <h3>Animal Forest</h3>
+                    <p>Meet your animal friends!</p>
+                    <button onclick="openWorld('Animal Forest')">Explore →</button>
+                </div>
+
+                <div class="world-card candy">
+                    <div class="world-emoji">🍭</div>
+                    <h3>Candy Kingdom</h3>
+                    <p>A world full of sweet surprises!</p>
+                    <button onclick="openWorld('Candy Kingdom')">Explore →</button>
+                </div>
+
+                <div class="world-card space">
+                    <div class="world-emoji">🚀</div>
+                    <h3>Space Galaxy</h3>
+                    <p>Explore the stars!</p>
+                    <button onclick="openWorld('Space Galaxy')">Explore →</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="games-section" id="games">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">LET THE FUN BEGIN!</span>
+                    <h2>Choose Your Adventure 🎮</h2>
+                </div>
+
+                <a href="#games" class="see-all">See All Games →</a>
+            </div>
+
+            <div class="games-grid">
+
+                <div class="game-card memory">
+                    <div class="game-image">🧠</div>
+                    <h3>Memory Match</h3>
+                    <p>Train your super memory!</p>
+                    <button>Play Game →</button>
+                </div>
+
+                <div class="game-card alphabet">
+                    <div class="game-image">🔤</div>
+                    <h3>ABC Adventure</h3>
+                    <p>Discover letters and words!</p>
+                    <button>Play Game →</button>
+                </div>
+
+                <div class="game-card numbers">
+                    <div class="game-image">🔢</div>
+                    <h3>Number Quest</h3>
+                    <p>Become a number hero!</p>
+                    <button>Play Game →</button>
+                </div>
+
+                <div class="game-card puzzle">
+                    <div class="game-image">🧩</div>
+                    <h3>Puzzle World</h3>
+                    <p>Put the pieces together!</p>
+                    <button>Play Game →</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REWARDS SECTION -->
+
+        <!-- AFSO TROPHY ROOM -->
+        <!-- DAILY CHALLENGES -->
+        <section class="daily-section" id="dailyChallenges">
+
+            <div class="daily-header">
+                <span>🎯 DAILY MISSIONS</span>
+                <h2>Today's Challenges</h2>
+                <p>Complete your missions and earn bonus coins!</p>
+            </div>
+
+            <div class="daily-progress">
+                <h3>🏆 Daily Progress</h3>
+                <p><span id="dailyCompleted">0</span> / 3 Challenges Completed</p>
+                <div class="progress-track">
+                    <div class="progress-fill" id="dailyProgressBar"></div>
+                </div>
+            </div>
+
+            <div class="daily-grid">
+
+                <div class="daily-card" id="dailyPlay">
+                    <div class="daily-icon">🎮</div>
+                    <h3>Little Gamer</h3>
+                    <p>Play one game today.</p>
+                    <span>Reward: 🪙 10</span>
+                    <small id="dailyPlayStatus">NOT COMPLETED</small>
+                </div>
+
+                <div class="daily-card" id="dailyMemory">
+                    <div class="daily-icon">🧠</div>
+                    <h3>Smart Thinker</h3>
+                    <p>Find 3 matching pairs.</p>
+                    <span>Reward: 🪙 15</span>
+                    <small id="dailyMemoryStatus">NOT COMPLETED</small>
+                </div>
+
+                <div class="daily-card" id="dailyCoins">
+                    <div class="daily-icon">🪙</div>
+                    <h3>Coin Hunter</h3>
+                    <p>Collect 10 coins today.</p>
+                    <span>Reward: 🪙 20</span>
+                    <small id="dailyCoinsStatus">NOT COMPLETED</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="rewards-section" id="rewards">
+
+            <div class="trophy-header">
+                <span>🏆 YOUR ACHIEVEMENTS</span>
+                <h2>AFSO Trophy Room</h2>
+                <p>Collect trophies as you explore and play!</p>
+            </div>
+
+            <div class="achievement-grid">
+
+                <div class="achievement-card" id="firstGame">
+                    <div class="achievement-icon">🎮</div>
+                    <h3>First Adventure</h3>
+                    <p>Play your first game</p>
+                    <span class="achievement-status">LOCKED</span>
+                </div>
+
+                <div class="achievement-card" id="coinMaster">
+                    <div class="achievement-icon">🪙</div>
+                    <h3>Coin Collector</h3>
+                    <p>Collect 50 coins</p>
+                    <span class="achievement-status">LOCKED</span>
+                </div>
+
+                <div class="achievement-card" id="memoryMaster">
+                    <div class="achievement-icon">🧠</div>
+                    <h3>Memory Master</h3>
+                    <p>Complete Memory Match</p>
+                    <span class="achievement-status">LOCKED</span>
+                </div>
+
+                <div class="achievement-card" id="superExplorer">
+                    <div class="achievement-icon">🌟</div>
+                    <h3>Super Explorer</h3>
+                    <p>Collect 100 coins</p>
+                    <span class="achievement-status">LOCKED</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GAME PLAY SCREEN -->
+        <section class="game-screen" id="gameScreen" hidden>
+
+            <div class="game-topbar">
+                <button id="backToGames">← Back to Games</button>
+                <h2 id="currentGameTitle">Memory Match</h2>
+                <div class="game-score">🪙 <span id="gameCoins">0</span></div>
+            </div>
+
+            <div class="game-intro">
+                <h2>Find the Matching Animals! 🐻</h2>
+                <p>Tap two cards and find the matching pictures.</p>
+            </div>
+
+            <div class="memory-grid" id="memoryGrid">
+
+                <!-- Cards will be generated using JavaScript -->
+
+            </div>
+
+            <div class="game-message" id="gameMessage">
+                Let's play! 🎉
+            </div>
+
+        </section>
+
+        <section class="rewards-section" id="rewards">
+
+            <div class="reward-icon">🏆</div>
+
+            <div class="reward-content">
+                <h2>Become a Super Explorer!</h2>
+                <p>Play games, complete challenges and earn amazing rewards.</p>
+            </div>
+
+            <a href="#games" class="reward-button">
+                Start Exploring →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">🚀 AFSO</div>
+        <p>Play. Learn. Explore! 🌈</p>
+        <span>Made for little explorers.</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

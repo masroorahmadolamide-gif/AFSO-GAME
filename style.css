@@ -1,0 +1,1217 @@
+
+/* =========================
+   AFSO - GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background: #F4FBFF;
+    color: #24364B;
+    overflow-x: hidden;
+}
+
+button, a {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(50, 130, 180, 0.07);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FF8A24;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #60758A;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF8A24;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coin-button,
+.profile-button {
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.coin-button {
+    padding: 8px 17px;
+    background: #FFF2C9;
+    color: #9C7412;
+}
+
+.profile-button {
+    width: 45px;
+    height: 45px;
+    background: #E4F4FF;
+    font-size: 25px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 470px;
+    margin: 30px 6% 65px;
+    padding: 55px 7%;
+    border-radius: 35px;
+    background: linear-gradient(120deg, #A6E8FF, #D6F5FF, #FFF0C7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 520px;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-label {
+    display: inline-block;
+    padding: 8px 17px;
+    border-radius: 30px;
+    background: white;
+    color: #2698C5;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 67px);
+    line-height: 1.08;
+    font-weight: 800;
+    color: #264B68;
+}
+
+.hero h1 span {
+    color: #FF8A24;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    max-width: 440px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #547087;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.play-button,
+.explore-button {
+    padding: 13px 25px;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.play-button {
+    color: white;
+    background: #FF8A24;
+    box-shadow: 0 6px 0 #DB6A12;
+}
+
+.explore-button {
+    color: #287B9F;
+    background: white;
+}
+
+.play-button:hover,
+.explore-button:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   HERO CHARACTERS
+========================= */
+
+.hero-art {
+    width: 42%;
+    height: 340px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-character {
+    font-size: clamp(120px, 17vw, 190px);
+    z-index: 2;
+    filter: drop-shadow(0 18px 8px rgba(52, 113, 145, 0.2));
+    animation: character-float 3s ease-in-out infinite;
+}
+
+.sun {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-size: 65px;
+    animation: spin-slow 12s linear infinite;
+}
+
+.hero-star {
+    position: absolute;
+    font-size: 35px;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.star-one {
+    top: 70px;
+    left: 15px;
+}
+
+.star-two {
+    bottom: 45px;
+    right: 20px;
+}
+
+.hero-cloud {
+    position: absolute;
+    font-size: 55px;
+    opacity: 0.8;
+}
+
+.cloud-one {
+    top: 30px;
+    left: 70px;
+}
+
+.cloud-two {
+    bottom: 15px;
+    left: 20px;
+}
+
+
+/* =========================
+   GAME SECTION
+========================= */
+
+.games-section {
+    padding: 0 8%;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    color: #FF8A24;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    color: #29465E;
+}
+
+.see-all {
+    color: #2698C5;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.game-card {
+    padding: 23px 18px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(50, 110, 150, 0.07);
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.game-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px rgba(50, 110, 150, 0.13);
+}
+
+.game-image {
+    height: 135px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    margin-bottom: 15px;
+    text-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.memory .game-image {
+    background: #FFE5EC;
+}
+
+.alphabet .game-image {
+    background: #DDF5FF;
+}
+
+.numbers .game-image {
+    background: #FFF0CC;
+}
+
+.puzzle .game-image {
+    background: #E9E0FF;
+}
+
+.game-card h3 {
+    font-size: 21px;
+    color: #304B63;
+}
+
+.game-card p {
+    color: #8194A5;
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+.game-card button {
+    border: none;
+    background: #FF8A24;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.game-card button:hover {
+    background: #E87513;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   REWARDS SECTION
+========================= */
+
+.rewards-section {
+    margin: 75px 8%;
+    padding: 30px 40px;
+    border-radius: 25px;
+    background: linear-gradient(110deg, #FFE4AC, #FFF3D5);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.reward-icon {
+    font-size: 65px;
+}
+
+.reward-content {
+    flex: 1;
+}
+
+.reward-content h2 {
+    font-size: 27px;
+    color: #A66C16;
+}
+
+.reward-content p {
+    color: #987C4E;
+    font-size: 16px;
+}
+
+.reward-button {
+    padding: 13px 22px;
+    border-radius: 14px;
+    color: white;
+    background: #FF8A24;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.reward-button:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 20px;
+    background: white;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 28px;
+    color: #FF8A24;
+    font-weight: 800;
+}
+
+footer p {
+    color: #60758A;
+    font-weight: 700;
+}
+
+footer span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #A0AFBB;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes character-float {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(3deg);
+    }
+}
+
+@keyframes spin-slow {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 950px) {
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 45px 5%;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        margin: 18px 4% 45px;
+        padding: 35px 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-art {
+        width: 100%;
+        height: 230px;
+    }
+
+    .hero-character {
+        font-size: 130px;
+    }
+
+    .sun {
+        right: 10px;
+    }
+
+    .games-section {
+        padding: 0 5%;
+    }
+
+    .section-heading {
+        align-items: start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .games-grid {
+        gap: 13px;
+    }
+
+    .game-card {
+        padding: 15px 10px;
+    }
+
+    .game-image {
+        height: 105px;
+        font-size: 60px;
+    }
+
+    .game-card h3 {
+        font-size: 18px;
+    }
+
+    .rewards-section {
+        margin: 50px 5%;
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* =========================
+   AFSO MEMORY MATCH GAME
+========================= */
+
+.game-screen {
+    margin: 50px 8%;
+    padding: 35px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 35px rgba(50, 110, 150, 0.08);
+}
+
+.game-screen[hidden] {
+    display: none;
+}
+
+.game-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.game-topbar h2 {
+    color: #29465E;
+    font-size: 25px;
+}
+
+.game-topbar button {
+    border: none;
+    background: #E5F6FF;
+    color: #2687AD;
+    padding: 11px 18px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.game-score {
+    background: #FFF1C9;
+    color: #9C7412;
+    padding: 10px 17px;
+    border-radius: 13px;
+    font-weight: 800;
+}
+
+.game-intro {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.game-intro h2 {
+    color: #FF8A24;
+    font-size: 30px;
+}
+
+.game-intro p {
+    color: #8194A5;
+    font-size: 17px;
+}
+
+.memory-grid {
+    max-width: 650px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.memory-card {
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 20px;
+    background: #8DDFFF;
+    box-shadow: 0 6px 0 #52B7DF;
+    cursor: pointer;
+    font-size: 48px;
+    transition: transform 0.25s, background 0.25s;
+    position: relative;
+}
+
+.memory-card:hover:not(:disabled) {
+    transform: translateY(-4px);
+}
+
+.memory-card .card-front {
+    display: none;
+}
+
+.memory-card .card-back {
+    display: block;
+    font-size: 35px;
+}
+
+.memory-card.flipped,
+.memory-card.matched {
+    background: #FFF0CE;
+    box-shadow: 0 6px 0 #E8C477;
+}
+
+.memory-card.flipped .card-front,
+.memory-card.matched .card-front {
+    display: block;
+}
+
+.memory-card.flipped .card-back,
+.memory-card.matched .card-back {
+    display: none;
+}
+
+.memory-card.matched {
+    background: #D9F8DF;
+    box-shadow: 0 6px 0 #91D8A0;
+    cursor: default;
+}
+
+.game-message {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: #2687AD;
+    min-height: 35px;
+}
+
+
+/* MEMORY GAME MOBILE */
+
+@media (max-width: 650px) {
+
+    .game-screen {
+        margin: 35px 4%;
+        padding: 20px 13px;
+    }
+
+    .game-topbar h2 {
+        font-size: 20px;
+    }
+
+    .game-intro h2 {
+        font-size: 24px;
+    }
+
+    .memory-grid {
+        gap: 10px;
+    }
+
+    .memory-card {
+        font-size: 35px;
+        border-radius: 14px;
+    }
+
+    .memory-card .card-back {
+        font-size: 27px;
+    }
+
+}
+
+/* AFSO ADVENTURE WORLD */
+
+.world-section {
+    padding: 60px 8%;
+}
+
+.world-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.world-heading span {
+    color: #FF8A24;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.world-heading h2 {
+    font-size: 35px;
+    color: #29465E;
+}
+
+.world-heading p {
+    color: #8194A5;
+    font-size: 17px;
+}
+
+.world-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.world-card {
+    padding: 30px 20px;
+    border-radius: 28px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 9px 20px rgba(0,0,0,0.06);
+}
+
+.world-card:hover {
+    transform: translateY(-10px);
+}
+
+.forest {
+    background: linear-gradient(145deg, #D5FFD9, #A5EAB1);
+}
+
+.candy {
+    background: linear-gradient(145deg, #FFE0F0, #FFC1DE);
+}
+
+.space {
+    background: linear-gradient(145deg, #E2D8FF, #C3B2FF);
+}
+
+.world-emoji {
+    font-size: 85px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 8px 5px rgba(0,0,0,0.12));
+}
+
+.world-card h3 {
+    font-size: 23px;
+    color: #29465E;
+}
+
+.world-card p {
+    color: #60758A;
+    margin: 5px 0 20px;
+}
+
+.world-card button {
+    border: none;
+    background: white;
+    color: #FF8A24;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 11px 23px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .world-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   AFSO PLAYER PROFILE
+========================= */
+
+.profile-section {
+    padding: 50px 8%;
+}
+
+.profile-heading {
+    margin-bottom: 25px;
+}
+
+.profile-heading span {
+    color: #FF8A24;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.profile-heading h2 {
+    font-size: 34px;
+    color: #29465E;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 28px;
+    background: linear-gradient(120deg, #DFF5FF, #F2E9FF);
+}
+
+.avatar-display {
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    box-shadow: 0 8px 0 rgba(60, 120, 160, 0.1);
+}
+
+.profile-info h2 {
+    font-size: 30px;
+    color: #29465E;
+}
+
+.profile-info p {
+    color: #73899D;
+    font-size: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.profile-stats span {
+    background: white;
+    padding: 9px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #60758A;
+}
+
+.avatar-picker {
+    margin-top: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 7px 20px rgba(50, 110, 150, 0.06);
+}
+
+.avatar-picker h3 {
+    font-size: 22px;
+    color: #29465E;
+    margin-bottom: 15px;
+}
+
+.avatar-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.avatar-options button {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #E6F3FA;
+    border-radius: 17px;
+    background: #F4FBFF;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.avatar-options button:hover {
+    transform: translateY(-5px);
+    border-color: #FF8A24;
+}
+
+.name-editor {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.name-editor input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 2px solid #E6F3FA;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.name-editor input:focus {
+    border-color: #FF8A24;
+}
+
+.name-editor button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #FF8A24;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-stats {
+        justify-content: center;
+    }
+
+    .name-editor {
+        flex-direction: column;
+    }
+
+    .profile-heading h2 {
+        font-size: 27px;
+    }
+}
+
+/* =========================
+   AFSO TROPHY ROOM
+========================= */
+
+.rewards-section {
+    margin: 65px 8%;
+    padding: 35px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #FFF0C9, #FFE2EA, #E9E0FF);
+}
+
+.trophy-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trophy-header span {
+    color: #E58B24;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.trophy-header h2 {
+    font-size: 36px;
+    color: #76502C;
+}
+
+.trophy-header p {
+    color: #927B68;
+    font-size: 16px;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.achievement-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 22px;
+    padding: 25px 12px;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-7px);
+}
+
+.achievement-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+    filter: grayscale(1);
+    opacity: 0.4;
+}
+
+.achievement-card h3 {
+    font-size: 19px;
+    color: #76502C;
+}
+
+.achievement-card p {
+    color: #9C8B79;
+    font-size: 13px;
+    margin: 5px 0 15px;
+}
+
+.achievement-status {
+    display: inline-block;
+    background: #ECECEC;
+    color: #999;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.achievement-card.unlocked {
+    border-color: #FFD36A;
+    background: #FFFDF5;
+}
+
+.achievement-card.unlocked .achievement-icon {
+    filter: none;
+    opacity: 1;
+    animation: trophy-pop 0.5s ease;
+}
+
+.achievement-card.unlocked .achievement-status {
+    background: #D9F8DF;
+    color: #258A43;
+}
+
+@keyframes trophy-pop {
+    0% { transform: scale(0.5); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media(max-width: 800px) {
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 450px) {
+    .rewards-section {
+        margin: 45px 4%;
+        padding: 22px 12px;
+    }
+
+    .trophy-header h2 {
+        font-size: 28px;
+    }
+
+    .achievement-card {
+        padding: 20px 8px;
+    }
+}
+/* DAILY CHALLENGES */
+
+.daily-section {
+  padding: 80px 8%;
+  background: #fff8ed;
+}
+
+.daily-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.daily-header span {
+  color: #ff7900;
+  font-weight: bold;
+}
+
+.daily-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.daily-header p {
+  color: #777;
+}
+
+.daily-progress {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  padding: 25px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.daily-progress h3 {
+  color: #ff7900;
+}
+
+.progress-track {
+  height: 14px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff7900, #ffc247);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.daily-card {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.daily-card:hover {
+  transform: translateY(-7px);
+}
+
+.daily-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.daily-card h3 {
+  color: #333;
+}
+
+.daily-card p {
+  color: #777;
+}
+
+.daily-card span {
+  display: block;
+  color: #ff7900;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.daily-card small {
+  display: inline-block;
+  background: #eee;
+  color: #777;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.daily-card.completed {
+  border: 2px solid #36bd75;
+  background: #f1fff6;
+}
+
+.daily-card.completed small {
+  background: #36bd75;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .daily-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-header h2 {
+    font-size: 2rem;
+  }
+}
